@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #383e45;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.site-title {
+  float: left;
+  line-height: 1px;
+  padding: 10px 0;
+
+}
+
+.site-title a {
+  width: 80px;
+  display: block;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+}
+
+.content-title {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+#header li {
+  margin-left: 30px;
+}
+
+#header li a {
+  color: #24292e;
+}
+
+#header li a:hover {
+  opacity: 0.7;
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+
+#mainvisual img {
+  width: 100%;
+  max-width: 90%;
+  height: 600px;
+  text-align : center;
+  margin-left: auto;
+  margin-right: auto;
+  /* object-fit: cover; */
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+.sec2{
+  float: left;
+  width: 100%;
+}
+
+#about{
+  float: left;
+  width: 50%;
+}
+
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+#about .text {
+  text-align: left;
+}
+
+/*-------------------------------------------
+Bicycle
+-------------------------------------------*/
+
+#bicycle{
+  float: right;
+  width: 50%;
+}
+
+#bicycle ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bicycle li {
+  width: 32%;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+
+  /*-------------------------------------------
+  Mainvisual
+  -------------------------------------------*/
+  #mainvisual img {
+    height: calc(100vh - 60px);
+  }
+
+  /*-------------------------------------------
+  About
+  -------------------------------------------*/
+  #about .content {
+    flex-direction: column;
+  }
+
+  #about img {
+    margin-right: 0;
+  }
+
+  /*-------------------------------------------
+  Bicycle
+  -------------------------------------------*/
+  #bicycle ul {
+    flex-direction: column;
+  }
+
+  #bicycle li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+ /*-------------------------------------------
+  Test
+  -------------------------------------------*/
+
+#mainvisual-test {
+  margin-bottom: 0px;
+}
+
+#mainvisual-test img {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+
+#TEST{
+  clear: both;
+}
+
+ /*-------------------------------------------
+  Button
+  -------------------------------------------*/
+.mybutton {
+  display       : flex;
+  border-radius : 5%;                     /* 角丸         */
+  font-size     : 18pt;                   /* 文字サイズ   */
+  text-align    : center;                 /* 文字位置     */
+  cursor        : pointer;                /* カーソル     */
+  padding       : 12px 12px;               /* 余白         */
+  background    : #000066;              /* 背景色       */
+  color         : #ffffff;              /* 文字色       */
+  line-height   : 1em;                    /* 1行の高さ    */
+  transition    : 0.3s;                   /* なめらか変化 */
+  box-shadow    : 7px 7px 3px #666666;  /* 影の設定     */
+  border        : thick double #006666; /* 枠の指定     */
+  transform     : rotate(-15deg);
+  margin-top    : 12px;
+  margin-left   : auto;
+  margin-right  : auto;
+}
+
+.mybutton:hover {
+  box-shadow    : none;          /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
